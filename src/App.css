@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+
+
+.navbar {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 55px;
+    left: 0;
+    top: 0;
+
+    background: #F55A5A;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.title {
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+
+    color: #FFFFFF;    
+}
+
+
+/* Card Component Styling */
+
+
+.container {
+    display: flex;
+    position: relative;
+    margin-bottom: 5em;
+    left: 15em;
+    top: 6em;
+    width: 50vw;
+}
+
+
+.image {
+    position: relative;
+    object-fit: cover;
+    margin-right: 10px;
+    width: 165px;
+    height: 208px;
+    border-radius: 6px;
+}
+
+/* Location section */
+
+
+.card-location {
+    display: flex;
+    padding: 1.5em;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+
+    color: #2B283A;
+}
+
+.pic {
+    color: red;
+    font-size: 20px;
+}
+.locname {
+    margin:auto;
+    padding-left: 1em;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+   
+    color: #2B283A;
+}
+
+.gray {
+    margin: 0;
+    padding-left: 1em;
+    padding-top: 3px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.5px;
+    line-height: 14px;
+
+    text-decoration-line: underline;
+
+    color: rgb(184, 184, 184);
+}
+
+
+
+/* Titulo - Date - Description - Line */ 
+
+
+.card-title {
+    margin: 0;
+    padding-left: 0.8em;
+    padding-top: 5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #2B283A;
+}
+
+.date {
+    margin: 0;
+    padding-left: 2em;
+    padding-top: 1.5em;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10.24px;
+    line-height: 12px;
+
+    color: #2B283A;
+}
+
+.description {
+    position: absolute;
+    margin: 0;
+    padding: 2em;
+    padding-top: 1.5em;
+    width: 50vw;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    
+
+    color: #2B283A;
+}
+
+.line {
+    position: absolute;
+    width: 500px;
+    left: 40px;
+    top: 250px;
+
+    border: 1px solid #F5F5F5;
+}
+
+
+
+@media screen and (max-width: 885px) {
+    .container {
+        left: 5em;
+    }
+    .card-location {
+        width: 35vw;
+    }
+    .description {
+        width: 50vw;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        left: 2em;
+    }
+    .card-location {
+        width: 40vw;
+        padding: 0.5em;
+    }
+    .description {
+        width: 50vw;
+    }
+
+}
+
+@media screen and (max-width: 615px) {
+    .container {
+        margin-bottom: 8em;
+        left: 3em;
+    }
+    .card-title {
+        font-size: 20px;
+
+    }
+    .card-location {
+        width: 50vw;
+        padding: 0.5em;
+    }
+    .description {
+        width: 50vw;
+    }
+    .line {
+        margin-top: 2.5em;
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 495px) {
+
+    .container {
+        display: flex;
+        position: relative;
+        margin-bottom: 5em;
+        left: 1em;
+        top: 5em;
+    }
+    .image {
+        object-fit: cover;
+        margin-right: 10px;
+        width: 125px;
+        height: 168px;
+        border-radius: 6px;
+    }
+    .locname {
+        padding-left: 0.5em;
+        margin-top: 5px;
+    }
+    .gray {
+        margin: 0;
+        padding-left: 0.2em;
+        padding-top: 5px;
+        font-size: 7.42px;
+    }
+    
+    .card-title {
+        margin-top: -0.5em;
+        font-size: 15px;
+    }
+    .date {
+        margin: 0;
+        padding-left: 1.3em;
+        padding-top: 0.5em;
+        font-size: 9px;
+    }
+    .description {
+        position: absolute;
+        margin: 0;
+        padding: 1.3em;
+        padding-top: 1.5em;
+        width: 55vw;
+
+        font-size: 9.5px;
+        line-height: 100%;
+    }
+    .line {
+        position: absolute;
+        width: 280px;
+       
+        top: 175px;
+    
+        border: 1px solid #f5f5f5;
+    }
+    
+}
+
+
+
